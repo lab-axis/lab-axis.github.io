@@ -51,6 +51,14 @@
     return '<a href="' + esc(href) + '"' + ext + '>' + esc(label) + '</a>';
   }
 
+  /* link() 와 같지만 안쪽에 HTML(이미지 등)을 넣을 때 씁니다.
+     label 은 이미 escape 된 HTML, title 은 접근성용 텍스트입니다. */
+  function link2(href, html, title) {
+    var ext = /^https?:/i.test(href) ? ' target="_blank" rel="noopener"' : '';
+    return '<a href="' + esc(href) + '"' + ext +
+           ' aria-label="' + esc(title || '') + '">' + html + '</a>';
+  }
+
   /* ---------------- Header / Putter ---------------- */
   function normalizePage(p) {
     p = String(p || '').replace(/\/+$/, '').split('/').pop().replace(/\.html$/, '');
@@ -257,6 +265,25 @@
       el.innerHTML = '<ul class="stack">' + d.collaborators.map(function (c) {
         return '<li style="font-size:15px;">' + esc(t(c.name)) +
                ' — <span class="muted">' + esc(t(c.affiliation)) + '</span></li>';
+      }).join('') + '</ul>';
+    },
+
+    /* 공동 연구 기관 로고 — data/collaboration.json
+       로고 비율이 제각각이어도 같은 크기의 칸 안에 맞춰 들어갑니다.
+       이미지가 없으면 그 칸에 기관 이름이 글자로 표시됩니다. */
+    collaboration: function (el, d) {
+      if (!d) return;
+      var list = d.institutions || [];
+      if (!list.length) { el.innerHTML = ''; return; }
+      el.innerHTML = '<ul class="logo-grid">' + list.map(function (o) {
+        var name = esc(t(o.name));
+        var img = o.logo
+          ? '<img src="' + esc(o.logo) + '" alt="' + name + '" loading="lazy"' +
+            ' onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),' +
+            '{className:\'logo-text\',textContent:this.alt}))">'
+          : '<span class="logo-text">' + name + '</span>';
+        var cell = '<div class="logo-cell">' + img + '</div>';
+        return '<li>' + (o.url ? link2(o.url, cell, name) : cell) + '</li>';
       }).join('') + '</ul>';
     },
 

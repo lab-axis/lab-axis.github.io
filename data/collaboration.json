@@ -1,0 +1,65 @@
+{
+  "_comment": "공동 연구 기관. 로고는 assets/img/collaboration/ 에 넣고 파일명을 영문 소문자-하이픈으로 지으세요. 표시 순서는 이 배열 순서와 같습니다.",
+  "institutions": [
+    {
+      "name": "Seokyeong University",
+      "logo": "assets/img/collaboration/seokyeong-university.png",
+      "url": "https://www.skuniv.ac.kr/"
+    },
+    {
+      "name": "University College London",
+      "logo": "assets/img/collaboration/ucl.png",
+      "url": "https://www.ucl.ac.uk/"
+    },
+    {
+      "name": "University of London",
+      "logo": "assets/img/collaboration/university-of-london.png",
+      "url": "https://www.london.ac.uk/"
+    },
+    {
+      "name": "The University of Suwon",
+      "logo": "assets/img/collaboration/suwon-university.svg",
+      "url": "https://www.suwon.ac.kr/"
+    },
+    {
+      "name": "Sejong University",
+      "logo": "assets/img/collaboration/sejong-university.jpg",
+      "url": "https://www.sejong.ac.kr/"
+    },
+    {
+      "name": "Korea National University of Transportation",
+      "logo": "assets/img/collaboration/korea-national-university-of-transportation.png",
+      "url": "https://www.ut.ac.kr/"
+    },
+    {
+      "name": "Northwestern University in Qatar",
+      "logo": "assets/img/collaboration/northwestern-university-in-qatar.jpg",
+      "url": "https://www.qatar.northwestern.edu/"
+    },
+    {
+      "name": "Linyi University",
+      "logo": "assets/img/collaboration/linyi-university.png",
+      "url": "https://www.lyu.edu.cn/"
+    },
+    {
+      "name": "Università degli Studi di Milano",
+      "logo": "assets/img/collaboration/universita-degli-studi-di-milano.png",
+      "url": "https://www.unimi.it/it"
+    },
+    {
+      "name": "University of Bath",
+      "logo": "assets/img/collaboration/university-of-bath.svg",
+      "url": "https://www.bath.ac.uk/"
+    },
+    {
+      "name": "Samsung",
+      "logo": "assets/img/collaboration/samsung.svg",
+      "url": "https://www.samsung.com/"
+    },
+    {
+      "name": "The University of Sydney",
+      "logo": "assets/img/collaboration/the-university-of-sydney.png",
+      "url": "https://www.sydney.edu.au/"
+    }
+  ]
+}

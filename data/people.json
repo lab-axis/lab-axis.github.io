@@ -16,16 +16,16 @@
       "email": "seongil.han@suwon.ac.kr",
       "photo": "assets/img/people/faculty/Seongil-Han.png",
       "tagline": {
-        "en": "Explainable AI, AI-driven forecasting, and multi-agent reasoning for strategic decision support. Previously Senior AI Research Engineer at LG; PhD from Birkbeck, University of London.",
-        "ko": "설명 가능한 AI, AI 기반 예측, 전략적 의사결정 지원을 위한 멀티에이전트 추론을 연구합니다. LG AI·빅데이터 연구부문 수석 연구원을 거쳐, 런던대학교 버크벡 칼리지에서 박사학위를 받았습니다."
+        "en": "Explainable AI, AI-driven forecasting, and multi-agent reasoning for strategic decision support. Previously Senior AI Research Engineer and Data Scientist in the AI & Big Data Research Division at LG; PhD from Birkbeck College, University of London (Birkbeck Institute for Data Science and AI)",
+        "ko": "설명 가능한 AI, AI 기반 예측, 전략적 의사결정 지원을 위한 멀티에이전트 추론을 연구합니다. 이전에는 LG AI·빅데이터 연구부서에서 선임 AI 연구 엔지니어 및 데이터 사이언티스트로 근무했으며, 런던대학교 버크벡 칼리지(버크벡 데이터 과학 및 AI 연구소)에서 박사 학위를 취득했습니다."
       },
       "links": [
         { "label": "Google Scholar", "url": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=AHEEJ5MAAAAJ" },
         { "label": "University profile", "url": "https://www.suwon.ac.kr/mainHp/prointro/detail.html?eno=1255128" }
       ],
       "bio": {
-        "en": "Seongil Han is an Assistant Professor in the Department of Computer Science at the University of Suwon. He holds affiliations with the Birkbeck Institute for Data Analytics (BIDA) and the Threat Intelligence Lab, as well as with the Financial Mathematics Group at King's College London, University of London. He also serves as an Editorial Board Member of the Korean Institute of Intelligent Systems (KIIS).\n\nPrior to his current academic post, he was a Senior AI Research Engineer and Data Scientist in the AI & Big Data Research Division at LG. His work there covered explainable artificial intelligence (XAI), AI-driven economic and financial forecasting, time-series modelling, anomaly detection, and advanced predictive analytics, supporting data-driven decision-making at the group's leadership level.",
-        "ko": "한성일 교수는 수원대학교 컴퓨터공학부 조교수입니다. 런던대학교 버크벡 데이터 분석 연구소(BIDA) 및 Threat Intelligence Lab, 킹스칼리지런던 금융수학 그룹에 소속되어 있으며, 한국지능시스템학회(KIIS) 편집위원으로 활동하고 있습니다.\n\n학계에 부임하기 전에는 LG AI·빅데이터 연구 부문에서 수석 AI 연구원 및 데이터 사이언티스트로 근무했습니다. 설명 가능한 인공지능(XAI), AI 기반 경제·금융 예측, 시계열 모델링, 이상 탐지, 고급 예측 분석을 연구하며 그룹 경영진의 데이터 기반 의사결정을 지원했습니다."
+        "en": "Seongil Han is an Assistant Professor in the Department of Computer Science at the University of Suwon. He holds affiliations with the Birkbeck Institute for Data Science and AI; and the Threat Intelligence Lab, as well as with the Financial Mathematics Group at King's College London, University of London. He also serves as an Editorial Board Member of the Korean Institute of Intelligent Systems (KIIS).\n\nPrior to his current academic post, he was a Senior AI Research Engineer and Data Scientist in the AI & Big Data Research Division at LG. His work there covered explainable artificial intelligence (XAI), AI-driven economic and financial forecasting, time-series modelling, anomaly detection, and advanced predictive analytics, supporting data-driven decision-making at the group's leadership level.",
+        "ko": "한성일 교수는 수원대학교 컴퓨터공학부의 조교수입니다. Birkbeck Institute for Data Science and AI와 Threat Intelligence Lab 그리고 Financial Mathematics Group at King's College London에 소속되어 있으며, 한국지능시스템학회(KIIS) 편집위원으로 활동하고 있습니다.\n\n학계에 부임하기 전에는 LG AI·빅데이터 연구 부문에서 수석 AI 연구원 및 데이터 사이언티스트로 근무했습니다. 설명 가능한 인공지능(XAI), AI 기반 경제·금융 예측, 시계열 모델링, 이상 탐지, 고급 예측 분석을 연구하며 그룹 경영진의 데이터 기반 의사결정을 지원했습니다."
       },
       "education": [
         {
@@ -94,26 +94,6 @@
     },
 
     {
-      "name": { "en": "Soomin Kim", "ko": "김수민" },
-      "group": "bsc",
-      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
-      "topic": {
-        "en": "AI-powered forecasting of foreign exchange dynamics under U.S. centrality",
-        "ko": "미국 중심성 하의 외환 동학에 대한 AI 기반 예측"
-      },
-      "photo": "assets/img/people/bsc/Soomin-Kim.png"
-    },
-    {
-      "name": { "en": "Jiwon Choi", "ko": "최지원" },
-      "group": "bsc",
-      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
-      "topic": {
-        "en": "AI-powered forecasting of foreign exchange dynamics under U.S. centrality",
-        "ko": "미국 중심성 하의 외환 동학에 대한 AI 기반 예측"
-      },
-      "photo": "assets/img/people/bsc/Jiwon-Choi.png"
-    },
-    {
       "name": { "en": "Daeseung Park", "ko": "박대승" },
       "group": "bsc",
       "role": { "en": "BSc student in Computer Science · Lab leader", "ko": "컴퓨터공학부 학부연구생 · 랩 리더" },
@@ -124,34 +104,14 @@
       "photo": "assets/img/people/bsc/Daeseung-Park.png"
     },
     {
-      "name": { "en": "Yongseob Han", "ko": "한용섭" },
+      "name": { "en": "Haseung Ryu", "ko": "류하승" },
       "group": "bsc",
       "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
       "topic": {
-        "en": "AI-powered forecasting of competitive technology dynamics within the S&P 500",
-        "ko": "S&P 500 내 기술 경쟁 동학의 AI 기반 예측"
+        "en": "A self-improving knowledge discovery system for cross-domain failure analysis and hypothesis optimization",
+        "ko": "교차 도메인 실패 분석 및 가설 최적화를 위한 자기개선형 지식 발견 시스템"
       },
-      "photo": "assets/img/people/bsc/Yongseob-Han.png"
-    },
-    {
-      "name": { "en": "Seunghwan Baek", "ko": "백승환" },
-      "group": "bsc",
-      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
-      "topic": {
-        "en": "AI-powered forecasting of competitive technology dynamics within the S&P 500",
-        "ko": "S&P 500 내 기술 경쟁 동학의 AI 기반 예측"
-      },
-      "photo": "assets/img/people/bsc/Seunghwan-Baek.png"
-    },
-    {
-      "name": { "en": "Eunbi Jo", "ko": "조은비" },
-      "group": "bsc",
-      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
-      "topic": {
-        "en": "AI-based deterministic and probabilistic wind power forecasting",
-        "ko": "AI 기반 결정론적·확률론적 풍력 발전 예측"
-      },
-      "photo": "assets/img/people/bsc/Eunbi-Jo.png"
+      "photo": "assets/img/people/bsc/Haseung-Ryu.png"
     },
     {
       "name": { "en": "Seunghee Son", "ko": "손승희" },
@@ -164,14 +124,54 @@
       "photo": "assets/img/people/bsc/Seunghee-Son.png"
     },
     {
-      "name": { "en": "Haseung Ryu", "ko": "류하승" },
+      "name": { "en": "Eunbi Jo", "ko": "조은비" },
       "group": "bsc",
       "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
       "topic": {
-        "en": "A self-improving knowledge discovery system for cross-domain failure analysis and hypothesis optimization",
-        "ko": "교차 도메인 실패 분석 및 가설 최적화를 위한 자기개선형 지식 발견 시스템"
+        "en": "AI-based deterministic and probabilistic wind power forecasting",
+        "ko": "AI 기반 결정론적·확률론적 풍력 발전 예측"
       },
-      "photo": "assets/img/people/bsc/Haseung-Ryu.png"
+      "photo": "assets/img/people/bsc/Eunbi-Jo.png"
+    },
+    {
+      "name": { "en": "Jiwon Choi", "ko": "최지원" },
+      "group": "bsc",
+      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
+      "topic": {
+        "en": "AI-powered forecasting of foreign exchange dynamics under U.S. centrality",
+        "ko": "미국 중심성 하의 외환 동학에 대한 AI 기반 예측"
+      },
+      "photo": "assets/img/people/bsc/Jiwon-Choi.png"
+    },
+    {
+      "name": { "en": "Yongseob Han", "ko": "한용섭" },
+      "group": "bsc",
+      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
+      "topic": {
+        "en": "AI-powered forecasting of competitive technology dynamics within the S&P 500",
+        "ko": "S&P 500 내 기술 경쟁 동학의 AI 기반 예측"
+      },
+      "photo": "assets/img/people/bsc/Yongseob-Han.png"
+    },
+    {
+      "name": { "en": "Soomin Kim", "ko": "김수민" },
+      "group": "bsc",
+      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
+      "topic": {
+        "en": "AI-powered forecasting of foreign exchange dynamics under U.S. centrality",
+        "ko": "미국 중심성 하의 외환 동학에 대한 AI 기반 예측"
+      },
+      "photo": "assets/img/people/bsc/Soomin-Kim.png"
+    },
+    {
+      "name": { "en": "Seunghwan Baek", "ko": "백승환" },
+      "group": "bsc",
+      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
+      "topic": {
+        "en": "AI-powered forecasting of competitive technology dynamics within the S&P 500",
+        "ko": "S&P 500 내 기술 경쟁 동학의 AI 기반 예측"
+      },
+      "photo": "assets/img/people/bsc/Seunghwan-Baek.png"
     }
   ],
 
