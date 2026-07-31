@@ -156,11 +156,13 @@
       }).join('');
     },
 
-    /* 지도교수 요약 카드 (members.html) — 상세는 faculty.html 로 연결 */
+    /* 지도교수 요약 카드 (members.html) — 상세(See detail)는 faculty.html 로 연결 */
     facultyBrief: function (el, d) {
       if (!d) return;
-      el.innerHTML = (d.faculty || []).map(function (f) {
-        var href = 'faculty' + (f.id ? '?id=' + encodeURIComponent(f.id) : '');
+      var list = d.faculty || [];
+      var single = list.length < 2;
+      el.innerHTML = list.map(function (f) {
+        var href = 'faculty' + (!single && f.id ? '?id=' + encodeURIComponent(f.id) : '');
         return '<article class="faculty-brief">' +
           '<a href="' + href + '" aria-label="' + esc(t(f.name)) + '">' +
             '<img class="photo" src="' + esc(f.photo || 'assets/img/people/placeholder.svg') + '"' +
