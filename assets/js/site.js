@@ -3,12 +3,12 @@
 
   /* ---------------- Navigate Menu ---------------- */
   var NAV = [
-    { href: 'index.html',        en: 'Home',         ko: '홈' },
-    { href: 'members.html',      en: 'Members',      ko: '구성원' },
-    { href: 'publications.html', en: 'Publications', ko: '논문' },
-    { href: 'research.html',     en: 'Research',     ko: '연구' },
-    { href: 'news.html',         en: 'News',         ko: '소식' },
-    { href: 'contact.html',      en: 'Contact',      ko: '오시는 길' }
+    { href: './',           en: 'Home',         ko: '홈' },
+    { href: 'members',      en: 'Members',      ko: '구성원' },
+    { href: 'publications', en: 'Publications', ko: '논문' },
+    { href: 'research',     en: 'Research',     ko: '연구' },
+    { href: 'news',         en: 'News',         ko: '소식' },
+    { href: 'contact',      en: 'Contact',      ko: '오시는 길' }
   ];
 
   /* ---------------- Language ---------------- */
@@ -52,13 +52,14 @@
   }
 
   /* ---------------- Header / Putter ---------------- */
-  /* 현재 페이지 파일명. 상세 페이지에서 상위 메뉴를 활성화하고 싶으면
-     <body data-nav="members.html"> 처럼 지정 */
+  function normalizePage(p) {
+    p = String(p || '').replace(/\/+$/, '').split('/').pop().replace(/\.html$/, '');
+    return (p === '' || p === 'index') ? './' : p;
+  }
+
   function currentPage() {
     var override = document.body && document.body.dataset.nav;
-    if (override) return override;
-    var f = location.pathname.split('/').pop();
-    return (!f || f === '') ? 'index.html' : f;
+    return normalizePage(override || location.pathname);
   }
 
   function buildChrome() {
@@ -76,7 +77,7 @@
       header.className = 'site-header';
       header.innerHTML =
         '<div class="bar">' +
-          '<a class="brand" href="index.html">' +
+          '<a class="brand" href="./">' +
             '<span class="name" style="font-size: 24px">LAB AXIS</span>' +
           '</a>' +
           '<button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">☰</button>' +
@@ -112,10 +113,10 @@
             '<p><a href="mailto:seongil.han@suwon.ac.kr">seongil.han@suwon.ac.kr</a></p>' +
           '</div>' +
           '<div class="f-links">' +
-            '<a href="members.html"><span data-lang="en">Members</span><span data-lang="ko">멤버</span></a>' +
-            '<a href="publications.html"><span data-lang="en">Publications</span><span data-lang="ko">논문</span></a>' +
-            '<a href="research.html"><span data-lang="en">Research</span><span data-lang="ko">연구</span></a>' +
-            '<a href="contact.html"><span data-lang="en">Contact</span><span data-lang="ko">오시는 길</span></a>' +
+            '<a href="members"><span data-lang="en">Members</span><span data-lang="ko">멤버</span></a>' +
+            '<a href="publications"><span data-lang="en">Publications</span><span data-lang="ko">논문</span></a>' +
+            '<a href="research"><span data-lang="en">Research</span><span data-lang="ko">연구</span></a>' +
+            '<a href="contact"><span data-lang="en">Contact</span><span data-lang="ko">오시는 길</span></a>' +
           '</div>' +
         '</div>';
     }
@@ -159,7 +160,7 @@
     facultyBrief: function (el, d) {
       if (!d) return;
       el.innerHTML = (d.faculty || []).map(function (f) {
-        var href = 'faculty.html' + (f.id ? '?id=' + encodeURIComponent(f.id) : '');
+        var href = 'faculty' + (f.id ? '?id=' + encodeURIComponent(f.id) : '');
         return '<article class="faculty-brief">' +
           '<a href="' + href + '" aria-label="' + esc(t(f.name)) + '">' +
             '<img class="photo" src="' + esc(f.photo || 'assets/img/people/placeholder.svg') + '"' +
