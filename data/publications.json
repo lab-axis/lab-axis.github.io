@@ -1,0 +1,30 @@
+{
+  "_comment": "논문 목록. 최신 논문을 배열 맨 앞에 추가하세요. 논문 제목·저자·게재지는 영문 표기이므로 번역 객체를 쓰지 않습니다.",
+
+  "publications": [
+    {
+      "title": "SMART: Structured Missingness Analysis and Reconstruction Technique for credit scoring",
+      "authors": "Seongil Han, Haemin Jung, and Paul D. Yoo",
+      "venue": "Nature Scientific Reports, 15(1), 15111",
+      "year": 2025,
+      "tag": "SCIE Q1",
+      "url": "https://www.nature.com/articles/s41598-025-99997-4"
+    },
+    {
+      "title": "NOTE: Non-parametric Oversampling Technique for Explainable credit scoring",
+      "authors": "Seongil Han, Haemin Jung, Paul D. Yoo, Alessandro Provetti, and Andrea Calì",
+      "venue": "Nature Scientific Reports, 14(1), 26070",
+      "year": 2024,
+      "tag": "SCIE Q1",
+      "url": "https://www.nature.com/articles/s41598-024-78055-5"
+    },
+    {
+      "title": "NATE: Non-pArameTric approach for Explainable credit scoring on imbalanced class",
+      "authors": "Seongil Han and Haemin Jung",
+      "venue": "PLOS ONE, 19(12), e0316454",
+      "year": 2024,
+      "tag": "SCIE Q1",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0316454"
+    }
+  ]
+}

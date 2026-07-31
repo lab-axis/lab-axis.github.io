@@ -1,0 +1,23 @@
+# ---- 편집기 / IDE 개인 설정 ----
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# ---- 운영체제가 자동 생성하는 파일 ----
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# ---- 임시 · 백업 파일 ----
+*.bak
+*.tmp
+*.log
+*~
+.jbeval/
+
+# ---- 로컬 실험용 ----
+test-*.html
+scratch/

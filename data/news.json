@@ -1,0 +1,185 @@
+{
+  "_comment": "연구실 소식. date 는 반드시 YYYY-MM 형식으로 쓰세요. 순서는 상관없습니다 — 최신순으로 자동 정렬됩니다. images 는 선택 항목입니다. 파일은 assets/img/news/ 에 YYYY-MM-슬러그-번호.jpg 로 저장하세요.",
+  "news": [
+    {
+      "date": "2026-07",
+      "title": {
+        "en": "Prof. Han attended ICML 2026 in Seoul",
+        "ko": "한성일 교수, 서울 ICML 2026 참석"
+      },
+      "body": {
+        "en": "Prof. Seongil Han attended ICML 2026 in Seoul, exploring the latest advances and emerging trends in artificial intelligence research. The conference was a valuable platform for engaging with cutting-edge work and the global AI community — made more memorable by attending alongside his former PhD supervisor, Prof. Paul D. Yoo of the University of London.",
+        "ko": "한성일 교수가 서울에서 열린 ICML 2026에 참석하여 인공지능 연구의 최신 성과와 흐름을 살펴보았습니다. 전 세계 AI 연구자들과 교류하는 뜻깊은 자리였으며, 박사 지도교수였던 런던대학교 Paul D. Yoo 교수와 함께 참석해 더욱 의미 있는 시간이 되었습니다."
+      },
+      "images": [
+        {
+          "src": "assets/img/news/2026-07-icml-1.jpg",
+          "caption": {
+            "en": "Prof. Han with Prof. Paul D. Yoo at ICML 2026, Seoul",
+            "ko": "ICML 2026(서울)에서 Paul D. Yoo 교수와 함께"
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-05",
+      "title": {
+        "en": "Invited lecture at the University of Jinan and joint research laboratory agreement",
+        "ko": "지난대학교 초청 강연 및 국제공동연구실 협약 체결"
+      },
+      "body": {
+        "en": "Prof. Seongil Han delivered an academic lecture to faculty and students of the School of Information Science and Engineering at the University of Jinan on \"An explainable multi-agent AI framework for forecasting asymmetric evolution between cyber threats and pertinent mitigation technologies\". The University of Suwon and the University of Jinan agreed to strengthen collaboration through joint educational programmes, academic exchange, and joint doctoral supervision, and signed an agreement to establish the AI Advanced Convergence International Joint Research Laboratory.",
+        "ko": "한성일 교수가 지난대학교 정보과학공학부 교수진과 학생을 대상으로 「사이버 위협과 대응 기술 간 비대칭 진화 예측을 위한 설명 가능한 멀티에이전트 AI 프레임워크」를 주제로 학술 강연을 진행했습니다. 수원대학교와 지난대학교는 공동 연구실 설립, 공동 교육 프로그램 운영, 학술 교류, 공동 박사 지도 프로그램을 통한 협력 강화에 합의하고 「수원대학교–지난대학교 AI 첨단융합 국제공동연구실」 설립 협약을 체결했으며, 양교 공동 지도교수 임명장이 수여되었습니다."
+      },
+      "links": [
+        {
+          "label": {
+            "en": "Related news 1",
+            "ko": "관련 기사 1"
+          },
+          "url": "https://www.ujn.edu.cn/info/1047/345153.htm"
+        },
+        {
+          "label": {
+            "en": "Related news 2",
+            "ko": "관련 기사 2"
+          },
+          "url": "https://mp.weixin.qq.com/s/pCKfGvHKaN4Zoc11gf7QpQ"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/img/news/2026-05-jinan-1.jpg",
+          "caption": {
+            "en": "Academic lecture at the University of Jinan",
+            "ko": "Jinan 대학교 초청 학술 강연"
+          }
+        },
+        {
+          "src": "assets/img/news/2026-05-jinan-2.jpg",
+          "caption": {
+            "en": "Academic lecture at the University of Jinan",
+            "ko": "Jinan 대학교 초청 학술 강연"
+          }
+        },
+        {
+          "src": "assets/img/news/2026-05-jinan-3.jpg",
+          "caption": {
+            "en": "Ceremony for the Establishment of an International Joint Research Lab and the Appointment of Joint Advisors",
+            "ko": "국제공동연구실 설립 및 공동 지도교수 위촉식"
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-05",
+      "title": {
+        "en": "8th place out of 1,008 teams at the DACON smart warehouse shipment delay prediction competition",
+        "ko": "DACON 스마트 물류 출고 지연 예측 AI 경진대회 1,008팀 중 8위"
+      },
+      "body": {
+        "en": "Lab members placed 8th out of 1,008 participants in the DACON smart warehouse shipment delay prediction AI competition, which focused on developing models to forecast shipment delays in smart warehouse environments.",
+        "ko": "스마트 물류 환경의 출고 지연을 예측하는 AI 모델을 개발하는 DACON 경진대회에서 연구실 구성원이 1,008명의 참가자 중 8위를 기록했습니다."
+      },
+      "people": {
+        "en": "Soomin Kim, Jiwon Choi",
+        "ko": "김수민, 최지원"
+      }
+    },
+    {
+      "date": "2026-04",
+      "title": {
+        "en": "FX forecasting paper submitted to the Journal of KIISE",
+        "ko": "외환 예측 논문 한국정보과학회 논문지 투고"
+      },
+      "body": {
+        "en": "A paper titled \"Towards interpretable and context-aware FX forecasting: a Bayesian graph neural network-based multi-agent framework\" has been submitted to the Journal of KIISE (Korea Institute of Information Scientists and Engineers) and is currently under review.",
+        "ko": "「Towards Interpretable and Context-Aware FX Forecasting: A Bayesian Graph Neural Network-Based Multi-Agent Framework」 논문을 한국정보과학회 논문지에 투고하여 현재 심사 중입니다."
+      },
+      "people": {
+        "en": "Soomin Kim, Daeseung Park, Seunghwan Baek, Jiwon Choi, Yongseob Han",
+        "ko": "김수민, 박대승, 백승환, 최지원, 한용섭"
+      }
+    },
+    {
+      "date": "2025-12",
+      "title": {
+        "en": "Opening remarks at the 2nd University of Suwon autonomous driving competition",
+        "ko": "제2회 수원대학교 자율주행 경진대회 개회사"
+      },
+      "body": {
+        "en": "Prof. Han delivered the opening remarks at the 2nd University of Suwon autonomous driving competition, which brought together student teams to compete in autonomous driving challenges and showcase their technical work.",
+        "ko": "한성일 교수가 제2회 수원대학교 자율주행 경진대회에서 개회사를 진행했습니다. 여러 학생 팀이 참가해 자율주행 과제를 겨루고 기술적 성과를 선보였습니다."
+      },
+      "images": [
+        {
+          "src": "assets/img/news/2025-12-autonomous-driving-1.jpg",
+          "caption": {
+            "en": "Opening remarks by Prof. Seongil Han at the autonomous driving competition.",
+            "ko": "한성일 교수의 자율주행 경진대회 개회사"
+          }
+        },
+        {
+          "src": "assets/img/news/2025-12-autonomous-driving-2.jpg",
+          "caption": {
+            "en": "Opening remarks by Prof. SeongTae Jhang at the autonomous driving competition.",
+            "ko": "정성태 교수의 자율주행 경진대회 개회사"
+          }
+        },
+        {
+          "src": "assets/img/news/2025-12-autonomous-driving-3.jpg",
+          "caption": {
+            "en": "Competition venue",
+            "ko": "대회 현장"
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-12",
+      "title": {
+        "en": "End-of-semester lab dinner",
+        "ko": "학기말 연구실 회식"
+      },
+      "body": {
+        "en": "Lab members gathered for a dinner to celebrate the end of the semester and look ahead to the next.",
+        "ko": "연구실 인원들과 한 학기를 마무리하며 회식을 갖고 다음 학기를 함께 준비했습니다."
+      },
+      "images": [
+        {
+          "src": "assets/img/news/2025-12-semester-dinner-1.jpg"
+        },
+        {
+          "src": "assets/img/news/2025-12-semester-dinner-2.jpg"
+        }
+      ]
+    },
+    {
+      "date": "2025-11",
+      "title": {
+        "en": "Lab dinner",
+        "ko": "연구실 단합 회식"
+      },
+      "body": {
+        "en": "Lab members gathered for a dinner to strengthen team bonds and spend relaxed time together outside the research setting.",
+        "ko": "연구실 인원들과 함께 식사 시간을 보내며 친목을 다졌습니다."
+      },
+      "images": [
+        {
+          "src": "assets/img/news/2025-11-lab-dinner-1.jpg"
+        }
+      ]
+    },
+    {
+      "date": "2025-09",
+      "title": {
+        "en": "Lab AXIS Established",
+        "ko": "Lab AXIS 설립"
+      },
+      "body": {
+        "en": "Prof. Seongil Han established Lab AXIS, an AI research laboratory in the Department of Computer Science at the University of Suwon.",
+        "ko": "한성일 교수가 수원대학교 컴퓨터공학부에 AI 연구실 Lab AXIS를 설립했습니다."
+      }
+    }
+  ]
+}

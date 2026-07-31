@@ -1,0 +1,38 @@
+{
+  "_comment": "연구 분야. 홈(index.html)의 Research Topic 섹션에서 사용합니다. 항목을 추가하면 자동으로 번호가 매겨집니다.",
+  "areas": [
+    {
+      "id": "data-analytics",
+      "title": {
+        "en": "Data analytics",
+        "ko": "데이터 분석"
+      },
+      "description": {
+        "en": "Our research in data analytics focuses on uncovering meaningful patterns within large-scale and complex datasets. By employing advanced analytical methods, machine learning techniques, explainable AI (XAI), and multi-agent reasoning approaches, we transform raw data into actionable insights that inform decision-making. This work supports evidence-based strategies across diverse domains including finance, healthcare, manufacturing, and economics.",
+        "ko": "데이터 분석 연구에서는 방대하고 복잡한 데이터에서 의미 있는 패턴을 찾는 데 초점을 맞춥니다. 고급 데이터 분석 기법, 머신러닝, 설명 가능한 AI(XAI), 나아가 멀티에이전트 추론을 활용하여 원시 데이터를 의사결정에 활용 가능한 전략적 인사이트로 전환하며, 금융·의료·제조·경제 등 다양한 분야의 근거 기반 의사결정을 지원합니다."
+      }
+    },
+    {
+      "id": "strategic-forecasting",
+      "title": {
+        "en": "AI-powered strategic forecasting",
+        "ko": "AI 기반 전략 예측"
+      },
+      "description": {
+        "en": "Our research on AI-powered forecasting investigates predictive models designed to anticipate future trends and manage uncertainty. Beyond conventional deep and machine learning solutions, we develop and refine AI architectures that effectively capture the intricate temporal and spatial interdependencies inherent in time-series data. Through this line of inquiry we aim to deliver robust, transparent, and innovative forecasting tools that inform strategic decision-making.",
+        "ko": "AI 기반 예측 연구에서는 미래의 추세와 불확실성을 전망할 수 있는 예측 모델을 탐구합니다. 기존 딥러닝·머신러닝 기반 솔루션을 넘어, 시계열에 내재한 복잡한 시간적·공간적 상호 의존성을 포착하기 위한 AI 아키텍처를 연구·개발·고도화하고 있으며, 이를 통해 전략 수립에 활용 가능한 견고하고 투명한 예측 도구를 제공하는 것을 목표로 합니다."
+      }
+    },
+    {
+      "id": "applied-ai",
+      "title": {
+        "en": "Applied AI for decision support",
+        "ko": "의사결정 지원을 위한 응용 AI"
+      },
+      "description": {
+        "en": "We translate methodological advances into systems that practitioners can act on. Current applications span credit scoring and financial risk, foreign exchange and market dynamics, wind power generation, industrial structure mapping, cyber threat evolution, and public health. Each project pairs a domain question with an interpretable model, so that the output can be defended as well as measured.",
+        "ko": "방법론적 진전을 실무자가 실제로 활용할 수 있는 시스템으로 옮깁니다. 현재 신용평가와 금융 리스크, 외환 및 시장 동학, 풍력 발전, 산업 구조 매핑, 사이버 위협 진화, 공중 보건 등에 적용하고 있습니다. 각 과제는 도메인 질문과 해석 가능한 모델을 짝지어, 결과를 측정할 수 있을 뿐 아니라 설명하고 방어할 수 있도록 설계합니다."
+      }
+    }
+  ]
+}

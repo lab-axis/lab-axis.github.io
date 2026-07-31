@@ -1,0 +1,164 @@
+{
+  "_comment": "진행 중인 연구 프로젝트. research.html 에 표시됩니다. 이 파일은 원문(영문) 단일 언어로 관리합니다 — en/ko 로 나누지 마세요. 논문이 게재되면 publications.json 으로 옮기고 여기서는 지웁니다.",
+  "projects": [
+    {
+      "title": "An explainable multi-agent AI framework for forecasting asymmetric evolution between cyber threats and pertinent mitigation technologies",
+      "collaborators": [
+        {
+          "name": "Prof. Paul D. Yoo",
+          "affiliation": "University of London",
+          "url": "https://scholar.google.com/citations?hl=en&user=NMhPNR4AAAAJ"
+        },
+        {
+          "name": "Dr. Zaid Almahmoud",
+          "affiliation": "Northwestern University",
+          "url": "https://scholar.google.com/citations?hl=en&user=G9dNNlkAAAAJ"
+        },
+        {
+          "name": "Prof. Ernesto Damiani",
+          "affiliation": "University of Milan",
+          "url": "https://scholar.google.com/citations?hl=en&user=aC7ZsHAAAAAJ"
+        }
+      ],
+      "status": "Submitted to NeurIPS 2026"
+    },
+    {
+      "title": "BOOST: Boosting-inspired optimal objective-based selection in tabular neural networks",
+      "collaborators": [
+        {
+          "name": "Prof. Seok-Beom Roh",
+          "affiliation": "Seokyeong University",
+          "url": "https://scholar.google.com/citations?user=xQFOOqYAAAAJ&hl=en"
+        },
+        {
+          "name": "Prof. Jin Hee Yoon",
+          "affiliation": "Sejong University",
+          "url": "https://scholar.google.com/citations?user=Rq_TQc0AAAAJ&hl=en"
+        }
+      ],
+      "status": "Submitted to Applied Soft Computing (SCIE Q1)"
+    },
+    {
+      "title": "A volatility-aware adaptive hybrid intelligent system for multi-market financial forecasting and decision support",
+      "collaborators": [
+        {
+          "name": "Prof. Sung-Kwun Oh",
+          "affiliation": "Linyi University",
+          "url": "https://scholar.google.com/citations?hl=en&user=jVXJq_AAAAAJ"
+        },
+        {
+          "name": "Dr. Jyotirmayee Behera",
+          "affiliation": "Linyi University",
+          "url": "https://scholar.google.com/citations?hl=en&user=fon6O_EAAAAJ"
+        }
+      ],
+      "status": "Submitted to Expert Systems with Applications (SCIE Q1)"
+    },
+    {
+      "title": "Machine learning-based breakout signal filtering using stop-loss risk prediction in cryptocurrency futures markets",
+      "collaborators": [
+        {
+          "name": "Prof. Paul D. Yoo",
+          "affiliation": "University of London",
+          "url": "https://scholar.google.com/citations?hl=en&user=NMhPNR4AAAAJ"
+        }
+      ],
+      "status": "Submitted to Nature Scientific Reports (SCIE Q1)"
+    },
+    {
+      "title": "Context-aware forecasting of inter-firm competitive dynamics with graph learning and multi-agent reasoning",
+      "collaborators": [
+        {
+          "name": "Prof. Paul D. Yoo",
+          "affiliation": "University of London",
+          "url": "https://scholar.google.com/citations?hl=en&user=NMhPNR4AAAAJ"
+        }
+      ],
+      "status": "Submitted to Nature Scientific Reports (SCIE Q1)"
+    },
+    {
+      "title": "Natural green environments and mental health burden in Japan: longitudinal and spatial evidence",
+      "collaborators": [
+        {
+          "name": "Prof. Zunwei Fu",
+          "affiliation": "University of Suwon"
+        },
+        {
+          "name": "Prof. Heejung Byun",
+          "affiliation": "University of Suwon",
+          "url": "https://scholar.google.com/citations?user=4v-ta7kAAAAJ&hl=en"
+        }
+      ],
+      "status": "Submitted to Environmental Research (SCIE Q1)"
+    },
+    {
+      "title": "Developmental trajectories of childhood aggression and key predictors identified through explainable AI approaches",
+      "collaborators": [
+        {
+          "name": "Dr. Suhlim Hwang",
+          "affiliation": "University College London",
+          "url": "https://scholar.google.com/citations?user=msd9r9AAAAAJ&hl=ko"
+        },
+        {
+          "name": "Prof. Jennifer Allen",
+          "affiliation": "University of Bath",
+          "url": "https://scholar.google.com/citations?hl=en&user=1QwN3ngAAAAJ"
+        },
+        {
+          "name": "Prof. David J. Hawes",
+          "affiliation": "University of Sydney",
+          "url": "https://scholar.google.com/citations?user=jcUwoYsAAAAJ&hl=en"
+        }
+      ],
+      "status": "In progress"
+    },
+    {
+      "title": "Interpretable hidden mediation networks via attention-weighted indirect contributions",
+      "collaborators": [
+        {
+          "name": "Prof. Seok-Beom Roh",
+          "affiliation": "Seokyeong University",
+          "url": "https://scholar.google.com/citations?user=xQFOOqYAAAAJ&hl=en"
+        },
+        {
+          "name": "Prof. Jin Hee Yoon",
+          "affiliation": "Sejong University",
+          "url": "https://scholar.google.com/citations?user=Rq_TQc0AAAAJ&hl=en"
+        }
+      ],
+      "status": "In progress"
+    },
+    {
+      "title": "Evaluating generative AI and agent-based data augmentation",
+      "collaborators": [
+        {
+          "name": "Dr. Jungyeol Ko",
+          "affiliation": "Samsung",
+          "url": "https://scholar.google.com/citations?user=JLMi2lIAAAAJ"
+        }
+      ],
+      "status": "In progress"
+    },
+    {
+      "title": "PRISM: Predictive reasoning for industrial structure mapping with graph learning and multi-agent interpretation",
+      "collaborators": [
+        {
+          "name": "Prof. Haemin Jung",
+          "affiliation": "Korea National University of Transportation",
+          "url": "https://scholar.google.com/citations?hl=en&user=9iRW4XoAAAAJ"
+        }
+      ],
+      "status": "In progress"
+    },
+    {
+      "title": "A self-improving knowledge discovery system for cross-domain failure analysis and hypothesis optimization",
+      "collaborators": [],
+      "status": "In progress"
+    },
+    {
+      "title": "Elastic collision tolerance for massively parallel reinforcement learning of UAV navigation in cluttered environments",
+      "collaborators": [],
+      "status": "In progress"
+    }
+  ]
+}
