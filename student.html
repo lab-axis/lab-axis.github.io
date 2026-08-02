@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Students — Lab AXIS</title>
+<meta name="description" content="Doctoral, master's, and undergraduate students of Lab AXIS, University of Suwon.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header data-site-header></header>
+
+<main id="main">
+  <section class="section wrap">
+    <p class="eyebrow"><span data-lang="en">Members</span><span data-lang="ko">구성원</span></p>
+    <h2 class="section-title"><span data-lang="en">Doctoral students</span><span data-lang="ko">박사과정</span></h2>
+    <div class="cards" data-render="students" data-source="people" data-group="phd"><p class="loading">Loading…</p></div>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section-title"><span data-lang="en">Master's students</span><span data-lang="ko">석사과정</span></h2>
+    <div class="cards" data-render="students" data-source="people" data-group="msc"><p class="loading">Loading…</p></div>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section-title"><span data-lang="en">Undergraduate researchers</span><span data-lang="ko">학부연구생</span></h2>
+    <div class="cards" data-render="students" data-source="people" data-group="bsc"><p class="loading">Loading…</p></div>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section-title"><span data-lang="en">Alumni</span><span data-lang="ko">졸업생</span></h2>
+    <div class="cards" data-render="students" data-source="people" data-group="alumni"></div>
+    <p class="muted small" style="margin:0;">
+      <span data-lang="en">Alumni will be listed here as members graduate.</span>
+      <span data-lang="ko">구성원이 졸업하면 이곳에 기록됩니다.</span>
+    </p>
+  </section>
+
+</main>
+
+<footer data-site-footer></footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

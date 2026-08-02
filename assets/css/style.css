@@ -125,6 +125,41 @@ h1, h2, h3, h4 {
 .nav a:hover { color: var(--ink); text-decoration: none; }
 .nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent-bright); }
 
+/* ---------- 하위 메뉴 (Members ▸ Faculty · Students) ----------
+   마우스를 올리거나 키보드로 포커스가 들어오면 펼쳐집니다.
+   .nav-item 에 여백을 두지 않고 .submenu 를 붙여 두어야
+   메뉴와 하위 메뉴 사이에서 마우스가 빠지지 않습니다. */
+.nav-item { position: relative; display: inline-flex; align-items: center; }
+.nav-item > a { display: inline-flex; align-items: center; gap: 5px; }
+.nav-item > a.on { color: var(--accent); border-bottom-color: var(--accent-bright); }
+.caret {
+  width: 0; height: 0; margin-top: 1px;
+  border-left: 3.5px solid transparent; border-right: 3.5px solid transparent;
+  border-top: 4px solid currentColor; opacity: .55;
+}
+
+.submenu {
+  position: absolute; top: 100%; left: -14px; z-index: 60;
+  min-width: 148px; padding: 6px 0; margin-top: 9px;
+  background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 6px 20px rgba(20, 20, 18, .07);
+  opacity: 0; visibility: hidden; transform: translateY(-4px);
+  transition: opacity .14s ease, transform .14s ease, visibility .14s;
+}
+/* 메뉴와 목록 사이 빈틈을 메워 마우스가 지나갈 수 있게 합니다 */
+.submenu::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
+.submenu a {
+  display: block; padding: 7px 16px; font-size: 13.5px;
+  color: var(--muted); border-bottom: 0; white-space: nowrap;
+}
+.submenu a:hover { background: var(--bg-tint); color: var(--ink); }
+.submenu a[aria-current="page"] { color: var(--accent); }
+
+.nav-item:hover .submenu,
+.nav-item:focus-within .submenu {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+
 .lang-toggle {
   display: inline-flex; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
 }
@@ -379,6 +414,18 @@ html[lang="ko"] h1, html[lang="ko"] h2, html[lang="ko"] h3 { word-break: keep-al
   }
   .nav.open { display: flex; }
   .nav a { padding: 8px 0; border-bottom: 0; }
+
+  /* 모바일에서는 펼침 없이 하위 항목을 들여쓰기해 바로 보여줍니다 */
+  .nav-item { display: block; width: 100%; }
+  .caret { display: none; }
+  .submenu {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    margin: 0 0 0 14px; padding: 0; border: 0; box-shadow: none;
+    background: transparent; min-width: 0;
+  }
+  .submenu::before { display: none; }
+  .submenu a { padding: 7px 0; font-size: 13.5px; }
+  .submenu a:hover { background: transparent; }
   .news-item, .pub { grid-template-columns: 1fr; gap: 6px; }
   .cards { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 20px 16px; }
   .news-gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }

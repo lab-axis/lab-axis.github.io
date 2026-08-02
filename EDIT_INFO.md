@@ -1,8 +1,5 @@
-# Lab AXIS 연구실 홈페이지
+# Lab AXIS Homepage Guidline
 
-수원대학교 컴퓨터공학부 Lab AXIS 공식 홈페이지 소스입니다.
-**빌드 도구가 없습니다.** HTML·CSS·JS 파일을 그대로 GitHub Pages가 서빙합니다.
-Node.js, npm, Jekyll 설치가 필요 없습니다.
 
 ---
 
@@ -11,41 +8,60 @@ Node.js, npm, Jekyll 설치가 필요 없습니다.
 ```
 lab-axis.github.io/
 ├── index.html            홈
-├── members.html          구성원 (지도교수는 요약 카드만)
-├── faculty.html          지도교수 상세 이력 — members.html 의 "See detail →" 로 연결
+├── members.html          구성원 전체 (지도교수 요약 + 학생 전원)
+├── faculty.html          지도교수 상세 이력
+├── student.html          학생
 ├── publications.html     논문
 ├── research.html         진행 중인 연구 프로젝트
 ├── news.html             소식
 ├── contact.html          오시는 길
 ├── 404.html              없는 페이지
 │
-├── data/                 ★ 내용을 고칠 때 대부분 여기만 만지면 됩니다
+├── data/                   내용을 고칠 때 대부분 여기만 만지면 됩니다'
 │   ├── people.json         지도교수 · 학생 · 협력 연구자
 │   ├── topic.json          연구 분야 (홈의 Research Topic 섹션)
 │   ├── research.json       투고 중 · 진행 중 프로젝트 (research.html)
 │   ├── publications.json   게재된 논문
+│   ├── collaboration.json  공동 연구 기관 로고 (홈의 Collaboration 섹션)
 │   └── news.json           연구실 소식
 │
 ├── assets/
 │   ├── css/style.css       모든 디자인 (색상·글꼴·간격)
 │   ├── js/site.js          헤더/푸터 생성, 언어 전환, JSON 렌더링
 │   └── img/
-│       ├── favicon.svg     브라우저 탭 아이콘
-│       ├── people/         구성원 사진 (placeholder.svg 포함)
-│       └── news/           행사 사진
+│       ├── favicon.svg       브라우저 탭 아이콘
+│       ├── hero-axis.svg     홈 히어로 그래픽
+│       ├── people/           구성원 사진 (default=placeholder.svg)
+│       ├── news/             행사 사진
+│       └── collaboration/    공동 연구 기관 로고
 │
+├── serve.py              로컬 미리보기 서버 (3장 참고)
+├── .gitignore            커밋하지 않을 파일 목록
 ├── .nojekyll             GitHub Pages가 Jekyll 처리를 건너뛰도록 함
-└── README.md             이 문서
+└── EDIT_INFO.md          이 문서
 ```
 
 핵심 원칙: **내용은 `data/`, 디자인은 `assets/css/style.css`, 동작은 `assets/js/site.js`.**\
 페이지 HTML에는 제목과 문단 정도만 들어 있고, 목록은 전부 JSON에서 자동으로 만들어집니다.
 
+> **`members.html` 과 `student.html` 의 학생 섹션은 내용이 같습니다.**
+> 학생 그룹을 추가하거나 섹션 제목을 고칠 때 **두 파일을 모두 고쳐야 합니다.**
+
+---
+
+## 1-a. Members 메뉴 구조
+
+| 조작 | 이동 | 보이는 내용                   |
+|---|---|--------------------------|
+| Members 클릭 | `members.html` | 지도교수 요약 카드 + 학생 전원       |
+| Members ▸ Faculty | `faculty.html` | 지도교수 상세 이력 · 강의... |
+| Members ▸ Students | `student.html` | 학생만 (박사 · 석사 · 학부 · 졸업생) |
+
 ---
 
 ## 1-b. 화면과 데이터의 연결 관계
 
-HTML의 `data-render` 속성이 "여기에 무엇을 그릴지"를 지정합니다.
+HTML의 `data-render` 속성이 "여기에 무엇을 그릴지"를 지정합니다.\
 `data-source` 가 있으면 그 이름의 JSON을, 없으면 `data-render` 와 같은 이름의 JSON을 읽습니다.
 
 | `data-render` | 읽는 파일 | 그리는 내용                    | 쓰이는 곳 |
@@ -54,10 +70,11 @@ HTML의 `data-render` 속성이 "여기에 무엇을 그릴지"를 지정합니�
 | `research` | `research.json` | 프로젝트 목록                   | research.html |
 | `publications` | `publications.json` | 논문 목록                     | publications.html |
 | `news` | `news.json` | 소식 + 사진 갤러리               | news.html |
+| `collaboration` | `collaboration.json` | 공동 연구 기관 로고               | index.html |
 | `facultyBrief` | `people.json` | 지도교수 요약 카드                | members.html |
 | `faculty` | `people.json` | 지도교수 상세 이력                | faculty.html |
 | `awards` | `people.json` | 수상 이력                     | faculty.html |
-| `students` | `people.json` | 학생 카드 (`data-group` 으로 필터) | members.html |
+| `students` | `people.json` | 학생 카드 (`data-group` 으로 필터) | members.html · student.html |
 | `collaborators` | `people.json` | 산업계 협력 연구자                | faculty.html |
 
 **보조 속성**
@@ -69,7 +86,7 @@ HTML의 `data-render` 속성이 "여기에 무엇을 그릴지"를 지정합니�
 | `data-group="bsc"` | 학생 그룹 필터 | phd / msc / bsc / alumni |
 | `data-set-title="true"` | 브라우저 탭 제목을 이름으로 교체 | faculty.html |
 | `data-images="false"` | 뉴스에서 사진을 감춤 | 홈 요약용 |
-| `<body data-nav="members.html">` | 헤더에서 활성화할 메뉴 지정 | faculty.html |
+| `<body data-nav="members">` | 헤더에서 활성화할 메뉴를 강제 지정 | 상세 페이지에서 상위 메뉴를 켤 때 |
 
 ---
 
@@ -92,17 +109,11 @@ HTML의 `data-render` 속성이 "여기에 무엇을 그릴지"를 지정합니�
 - `group` 값에 따라 표시되는 위치가 정해집니다.
   `phd` = 박사과정 / `msc` = 석사과정 / `bsc` = 학부연구생 / `alumni` = 졸업생
 - **졸업하면** `group` 을 `"alumni"` 로 바꾸기만 하면 자동으로 졸업생 칸으로 이동합니다.
-- 사진은 `assets/img/people/` 에 넣고 경로 수정합니다.
-- 파일명은 **영문 소문자·하이픈**으로 (`gildong-hong.jpg`). 공백·한글·대문자는 금지입니다.
-- 사진 규격: **증명사진 7:9 비율**(권장 700×900px), JPG, 500KB 이하.
 
-```bash
-# 7:9 로 자르고 EXIF 제거 (얼굴이 위쪽이므로 north 기준으로 크롭)
-magick input.jpg -strip -resize 700x900^ -gravity north -extent 700x900 -quality 82 assets/img/people/gildong-hong.jpg
-```
-
-- 얼굴 사진은 **당사자 동의**를 받고 올리세요. 졸업 후 삭제를 요청하면 `photo` 줄과 파일을 지웁니다.
-  `photo` 줄이 없으면 회색 기본 이미지가 나오므로 레이아웃은 깨지지 않습니다.
+[//]: # (```bash)
+[//]: # (# 7:9 로 자르고 EXIF 제거 &#40;얼굴이 위쪽이므로 north 기준으로 크롭&#41;)
+[//]: # (magick input.jpg -strip -resize 700x900^ -gravity north -extent 700x900 -quality 82 assets/img/people/gildong-hong.jpg)
+[//]: # (```)
 
 ### 2-1-b. 지도교수님 정보 고치기
 
@@ -180,49 +191,30 @@ magick input.jpg -strip -resize 700x900^ -gravity north -extent 700x900 -quality
 
 **포맷과 용량**
 
-| 항목 | 기준 |
-|---|---|
-| 형식 | 사진은 `.jpg` (도표·스크린샷처럼 글자가 많으면 `.png`) |
-| 최대 가로 | 1600px |
+| 항목 | 기준                   |
+|---|----------------------|
+| 형식 | `.jpg` `.png`        |
+| 최대 가로 | 1600px               |
 | 파일당 용량 | 200KB 이하 권장, 최대 500KB |
-| 메타데이터 | EXIF 제거 필수 (스마트폰 사진에는 **촬영 위치 GPS**가 들어 있습니다) |
+| 메타데이터 | EXIF 제거 추천           |
 
 [//]: # (**변환 명령어** — 원본을 `raw/` 에 두고 아래를 실행하면 규칙에 맞게 한 번에 처리됩니다.)
-
 [//]: # ()
 [//]: # (```bash)
-
 [//]: # (# ImageMagick 한 장)
-
 [//]: # (magick raw/photo.jpg -strip -resize 1600x1600\> -quality 82 assets/img/news/2026-09-workshop-1.jpg)
-
 [//]: # ()
 [//]: # (# 폴더 전체 &#40;Python + Pillow&#41;)
-
 [//]: # (python -c ")
-
 [//]: # (from PIL import Image; import glob, os)
-
 [//]: # (for i, f in enumerate&#40;sorted&#40;glob.glob&#40;'raw/*'&#41;&#41;, 1&#41;:)
-
 [//]: # (    im = Image.open&#40;f&#41;.convert&#40;'RGB'&#41;)
-
 [//]: # (    if im.width > 1600: im = im.resize&#40;&#40;1600, round&#40;im.height*1600/im.width&#41;&#41;, Image.LANCZOS&#41;)
-
 [//]: # (    im.save&#40;f'assets/img/news/2026-09-workshop-{i}.jpg', quality=82, optimize=True&#41;)
-
 [//]: # (")
-
 [//]: # (```)
-
 [//]: # ()
 [//]: # (`-strip` 과 Pillow 의 재저장 모두 EXIF를 제거합니다. 변환 후 원본은 저장소에 넣지 마세요.)
-
-**사진 게시 전 확인**
-
-- 얼굴이 나오는 사진은 **당사자 동의**를 받으세요. 단체 사진도 마찬가지입니다.
-- 졸업생·퇴사자가 삭제를 요청하면 해당 `images` 항목과 파일을 지웁니다. (`placeholder.svg`로 대체됩니다.)
-- 화이트보드·모니터에 미공개 연구 내용이 찍히지 않았는지 확인하세요.
 
 ### 2-4. 프로젝트 추가 / 논문 게재 시 이동
 
@@ -242,13 +234,34 @@ magick input.jpg -strip -resize 700x900^ -gravity north -extent 700x900 -quality
 }
 ```
 
+### 2-4-b. 공동 연구 기관 로고 추가
+
+1. 로고 파일을 `assets/img/collaboration/` 에 넣습니다. 파일명은 **영문 소문자·하이픈**
+   (`university-of-bath.svg`). 배경이 투명한 SVG 나 PNG 가 가장 깔끔합니다.
+2. `data/collaboration.json` 의 `institutions` 배열에 추가합니다. **표시 순서 = 배열 순서.**
+
+```json
+{
+  "name": "University of Bath",
+  "logo": "assets/img/collaboration/university-of-bath.svg",
+  "url": "https://www.bath.ac.uk/"
+}
+```
+[//]: # (```bash)
+[//]: # (magick input.png -trim +repage -strip assets/img/collaboration/name.png)
+[//]: # (```)
+
 ### 2-5. 메뉴 추가 / 이름 변경
 
 `assets/js/site.js` 파일 맨 위의 `NAV` 배열만 고치면 모든 페이지의 헤더가 한 번에 바뀝니다.
 
 ```js
 var NAV = [
-  { href: 'index.html', en: 'Home', ko: '홈' },
+  { href: './',      en: 'Home',    ko: '홈' },
+  { href: 'members',  en: 'Members', ko: '구성원', children: [
+    { href: 'faculty', en: 'Faculty',  ko: '지도교수' },
+    { href: 'student', en: 'Students', ko: '학생' }
+  ]},
   ...
 ];
 ```
@@ -262,8 +275,7 @@ var NAV = [
 --accent-bright: #1D9E75;   /* 밑줄, 구분 강조 */
 --ink:           #141412;   /* 제목 글자색 */
 ```
-
----
+개별 페이지 HTML 안에 `#색상코드` 를 직접 쓰지 마세요. 나중에 톤을 바꿀 때 찾기 어려워집니다.
 
 ## 5. 언어 전환 규칙
 
@@ -271,13 +283,7 @@ var NAV = [
 
 - **JSON 안에서**: `{ "en": "...", "ko": "..." }` 형태로 두 언어를 적습니다.
 - **HTML 안에서**: `<span data-lang="en">English</span><span data-lang="ko">한국어</span>` 로 나란히 적습니다.
-- 논문 제목·저자·학술지명, 그리고 `research.json` 전체는 원문(영문)이므로 번역하지 않습니다.
-
-> ⚠️ **`data-lang` 은 번역 텍스트에만 쓰세요.**
-> CSS가 `data-lang` 이 붙은 요소 중 현재 언어와 다른 것을 **화면에서 숨깁니다.**
-> 번역이 아닌 요소(버튼·아이콘 등)에 붙이면 그 요소 자체가 사라집니다.
-> 실제로 언어 전환 버튼에 `data-lang` 을 썼다가 버튼이 사라지는 문제가 있었고,
-> 지금은 `data-set-lang` 이라는 별도 속성을 쓰도록 고쳤습니다.
+- 논문 제목·저자·학술지명, 그리고 `research.json`는 원문 유지로 언어 선택이 동작하지 않습니다.
 
 ### 한국어를 안 쓰는 항목
 
@@ -287,5 +293,5 @@ var NAV = [
 |---|---|
 | `publications.json` 전체 | 논문 서지정보는 원문이 정식 표기 |
 | `research.json` 전체 | 논문 투고 제목이므로 위와 동일 |
+| `collaboration.json` 의 `name` | 기관 공식 명칭 |
 | `people.json` 의 `email`, `photo`, `group`, `id` | 번역 대상이 아닌 값 |
-

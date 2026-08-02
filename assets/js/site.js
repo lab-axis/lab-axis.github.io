@@ -2,9 +2,14 @@
   'use strict';
 
   /* ---------------- Navigate Menu ---------------- */
+  /* children 을 넣으면 마우스를 올렸을 때 펼쳐지는 하위 메뉴가 됩니다.
+     상위 항목의 href 는 하위 첫 항목으로 이동하는 대표 주소입니다. */
   var NAV = [
     { href: './',           en: 'Home',         ko: '홈' },
-    { href: 'members',      en: 'Members',      ko: '구성원' },
+    { href: 'members',      en: 'Members',      ko: '구성원', children: [
+      { href: 'faculty',    en: 'Faculty',      ko: '지도교수' },
+      { href: 'student',    en: 'Students',     ko: '학생' }
+    ]},
     { href: 'publications', en: 'Publications', ko: '논문' },
     { href: 'research',     en: 'Research',     ko: '연구' },
     { href: 'news',         en: 'News',         ko: '소식' },
@@ -73,11 +78,31 @@
   function buildChrome() {
     var here = currentPage();
 
+    function label(i) {
+      return '<span data-lang="en">' + i.en + '</span>' +
+             '<span data-lang="ko">' + i.ko + '</span>';
+    }
+
     var navHTML = NAV.map(function (i) {
-      var cur = (i.href === here) ? ' aria-current="page"' : '';
-      return '<a href="' + i.href + '"' + cur + '>' +
-             '<span data-lang="en">' + i.en + '</span>' +
-             '<span data-lang="ko">' + i.ko + '</span></a>';
+      var kids = i.children || [];
+      /* 하위 항목 중 하나라도 현재 페이지면 상위 메뉴도 활성 표시 */
+      var onSelf = (i.href === here);
+      var onKid  = kids.some(function (k) { return k.href === here; });
+
+      if (!kids.length) {
+        return '<a href="' + i.href + '"' + (onSelf ? ' aria-current="page"' : '') + '>' +
+               label(i) + '</a>';
+      }
+      return '<div class="nav-item has-sub">' +
+        '<a href="' + i.href + '"' + (onSelf || onKid ? ' class="on"' : '') +
+          (onSelf ? ' aria-current="page"' : '') +
+          ' aria-haspopup="true" aria-expanded="false">' + label(i) +
+          '<span class="caret" aria-hidden="true"></span></a>' +
+        '<div class="submenu">' + kids.map(function (k) {
+          return '<a href="' + k.href + '"' +
+                 (k.href === here ? ' aria-current="page"' : '') + '>' + label(k) + '</a>';
+        }).join('') + '</div>' +
+      '</div>';
     }).join('');
 
     var header = document.querySelector('[data-site-header]');
@@ -121,7 +146,7 @@
             '<p><a href="mailto:seongil.han@suwon.ac.kr">seongil.han@suwon.ac.kr</a></p>' +
           '</div>' +
           '<div class="f-links">' +
-            '<a href="members"><span data-lang="en">Members</span><span data-lang="ko">멤버</span></a>' +
+            '<a href="student"><span data-lang="en">Students</span><span data-lang="ko">학생</span></a>' +
             '<a href="publications"><span data-lang="en">Publications</span><span data-lang="ko">논문</span></a>' +
             '<a href="research"><span data-lang="en">Research</span><span data-lang="ko">연구</span></a>' +
             '<a href="contact"><span data-lang="en">Contact</span><span data-lang="ko">오시는 길</span></a>' +
@@ -164,7 +189,7 @@
       }).join('');
     },
 
-    /* 지도교수 요약 카드 (members.html) — 상세(See detail)는 faculty.html 로 연결 */
+    /* 지도교수 요약 카드 — 상세(See detail)는 faculty.html 로 연결 */
     facultyBrief: function (el, d) {
       if (!d) return;
       var list = d.faculty || [];
