@@ -129,7 +129,7 @@
       "status": "In progress"
     },
     {
-      "title": "Evaluating generative AI and agent-based data augmentation",
+      "title": "Conditional Utility of LLM-Generated Data Augmentation in Multilingual Binary Classification",
       "collaborators": [
         {
           "name": "Dr. Jungyeol Ko",
@@ -137,7 +137,7 @@
           "url": "https://scholar.google.com/citations?user=JLMi2lIAAAAJ"
         }
       ],
-      "status": "In progress"
+      "status": "Submitted to Nature Scientific Reports (SCIE Q1)"
     },
     {
       "title": "PRISM: Predictive reasoning for industrial structure mapping with graph learning and multi-agent interpretation",
