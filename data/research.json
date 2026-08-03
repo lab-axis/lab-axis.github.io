@@ -92,6 +92,17 @@
       "status": "Submitted to Environmental Research (SCIE Q1)"
     },
     {
+      "title": "Conditional Utility of LLM-Generated Data Augmentation in Multilingual Binary Classification",
+      "collaborators": [
+        {
+          "name": "Dr. Jungyeol Ko",
+          "affiliation": "Samsung",
+          "url": "https://scholar.google.com/citations?user=JLMi2lIAAAAJ"
+        }
+      ],
+      "status": "Submitted to Nature Scientific Reports (SCIE Q1)"
+    },
+    {
       "title": "Developmental trajectories of childhood aggression and key predictors identified through explainable AI approaches",
       "collaborators": [
         {
@@ -127,17 +138,6 @@
         }
       ],
       "status": "In progress"
-    },
-    {
-      "title": "Conditional Utility of LLM-Generated Data Augmentation in Multilingual Binary Classification",
-      "collaborators": [
-        {
-          "name": "Dr. Jungyeol Ko",
-          "affiliation": "Samsung",
-          "url": "https://scholar.google.com/citations?user=JLMi2lIAAAAJ"
-        }
-      ],
-      "status": "Submitted to Nature Scientific Reports (SCIE Q1)"
     },
     {
       "title": "PRISM: Predictive reasoning for industrial structure mapping with graph learning and multi-agent interpretation",
