@@ -60,6 +60,11 @@
       "name": "The University of Sydney",
       "logo": "assets/img/collaboration/the-university-of-sydney.png",
       "url": "https://www.sydney.edu.au/"
+    },
+    {
+      "name": "University of Pennsylvania",
+      "logo": "assets/img/collaboration/university-of-pennsylvania.png",
+      "url": "https://www.upenn.edu/"
     }
   ]
 }
