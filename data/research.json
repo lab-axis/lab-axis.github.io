@@ -134,6 +134,11 @@
           "name": "Prof. David J. Hawes",
           "affiliation": "University of Sydney",
           "url": "https://scholar.google.com/citations?user=jcUwoYsAAAAJ&hl=en"
+        },
+        {
+          "name": "Prof. Rebecca Waller",
+          "affiliation": "University of Pennsylvania",
+          "url": "https://scholar.google.com/citations?hl=en&user=ea731DAAAAAJ"
         }
       ],
       "status": "In progress"
@@ -173,29 +178,6 @@
     {
       "title": "Elastic collision tolerance for massively parallel reinforcement learning of UAV navigation in cluttered environments",
       "collaborators": [],
-      "status": "In progress"
-    },
-    {
-      "title": "Developmental trajectories of childhood aggression and key predictors identified through explainable AI approaches",
-      "collaborators": [
-        {
-          "name": "Dr. Suhlim Hwang",
-          "affiliation": "University College London"
-        },
-        {
-          "name": "Prof. Jennifer Allen",
-          "affiliation": "University of Bath"
-        },
-        {
-          "name": "Prof. David J. Hawes",
-          "affiliation": "University of Sydney"
-        },
-        {
-          "name": "Prof. Rebecca Waller",
-          "affiliation": "University of Pennsylvania",
-          "url": "https://scholar.google.com/citations?hl=en&user=ea731DAAAAAJ"
-        }
-      ],
       "status": "In progress"
     }
   ]
