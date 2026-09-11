@@ -134,6 +134,16 @@
       "photo": "assets/img/people/bsc/Eunbi-Jo.png"
     },
     {
+      "name": { "en": "Yoona Han", "ko": "한윤아" },
+      "group": "bsc",
+      "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
+      "topic": {
+        "en": "",
+        "ko": ""
+      },
+      "photo": "assets/img/people/bsc/Yoona-Han.jpg"
+    },
+    {
       "name": { "en": "Jiwon Choi", "ko": "최지원" },
       "group": "bsc",
       "role": { "en": "BSc student in Computer Science", "ko": "컴퓨터공학부 학부연구생" },
