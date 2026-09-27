@@ -2,7 +2,7 @@
   "_comment": "진행 중인 연구 프로젝트. research.html 에 표시됩니다. 이 파일은 원문(영문) 단일 언어로 관리합니다 — en/ko 로 나누지 마세요. 논문이 게재되면 publications.json 으로 옮기고 여기서는 지웁니다.",
   "projects": [
     {
-      "title": "An explainable multi-agent AI framework for forecasting asymmetric evolution between cyber threats and pertinent mitigation technologies",
+      "title": "From Forecasting to Decision Support:Evidence-Bounded Multi-Agent Reasoning for Long-Horizon Cyber Foresight",
       "collaborators": [
         {
           "name": "Prof. Paul D. Yoo",
@@ -20,7 +20,7 @@
           "url": "https://scholar.google.com/citations?hl=en&user=aC7ZsHAAAAAJ"
         }
       ],
-      "status": "Submitted to NeurIPS 2026"
+      "status": "Submitted to Nature Scientific Reports (SCIE Q1)"
     },
     {
       "title": "BOOST: Boosting-inspired optimal objective-based selection in tabular neural networks",
