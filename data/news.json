@@ -2,6 +2,21 @@
   "_comment": "연구실 소식. date 는 반드시 YYYY-MM 형식으로 쓰세요. 순서는 상관없습니다 — 최신순으로 자동 정렬됩니다. images 는 선택 항목입니다. 파일은 assets/img/news/ 에 YYYY-MM-슬러그-번호.jpg 로 저장하세요.",
   "news": [
     {
+      "date": "2026-10",
+      "title": {
+        "en": "Yunlong Zhu's paper accepted at NeurIPS 2026: MANGO: Multi-Angle Neural Gated Operators for Chirp-Perturbed PDEs",
+        "ko": "주운룡 박사과정생, NeurIPS 2026 논문 채택: MANGO: Multi-Angle Neural Gated Operators for Chirp-Perturbed PDEs"
+      },
+      "body": {
+        "en": "Congratulations to Yunlong Zhu, PhD student in Computer Science, whose paper has been accepted at NeurIPS 2026. The paper introduces MANGO (Multi-Angle Neural Gated Operator), a spectral neural operator for chirp-perturbed PDEs, whose solutions have local spectral content that rotates continuously with position. MANGO maintains multiple fractional Fourier transform (FRFT) branches with learnable angles, optimized jointly with the spectral weights and a position-dependent softmax gate that combines the branches at every spatial location. This lets the model discover a PDE's intrinsic angle from data when it is unknown or varies across the domain, which classical FRFT methods cannot do. A Mihlin–Hörmander regularizer on the non-Fourier branches encourages each branch to act as a bounded operator. On four chirp-perturbed PDE benchmarks with closed-form ground truth, MANGO recovers the intrinsic spectral structure from supervised solution data alone and achieves state-of-the-art performance against six neural-operator baselines.",
+        "ko": "컴퓨터공학 박사과정 주운룡 학생의 논문이 NeurIPS 2026에 채택되었습니다. 진심으로 축하합니다. 이 논문은 해가 위치에 따라 연속적으로 회전하는 국소 스펙트럼 성분을 갖는 chirp 섭동 편미분방정식(PDE)을 위한 스펙트럼 뉴럴 연산자 MANGO(Multi-Angle Neural Gated Operator)를 제안합니다. MANGO는 각도를 학습할 수 있는 여러 분수 푸리에 변환(FRFT) 가지를 두고, 스펙트럼 가중치 및 위치별 softmax 게이트와 함께 학습하여 모든 공간 위치에서 가지들을 결합합니다. 이를 통해 PDE의 고유 각도를 알 수 없거나 영역에 따라 달라지는 경우에도 데이터로부터 찾아낼 수 있으며, 이는 기존 FRFT 방법으로는 불가능했습니다. 또한 비푸리에 가지의 스펙트럼 가중치에 Mihlin–Hörmander 정규화를 적용해 각 가지가 유계 연산자로 동작하도록 유도합니다. 정답이 닫힌 형태로 주어지는 4개의 chirp 섭동 PDE 벤치마크에서, MANGO는 지도 학습된 해 데이터만으로 각 PDE의 고유 스펙트럼 구조를 복원했고 6개의 뉴럴 연산자 기준 모델 대비 최고 성능을 달성했습니다."
+      },
+      "people": {
+        "en": "Yunlong Zhu",
+        "ko": "주운룡"
+      }
+    },
+    {
       "date": "2026-07",
       "title": {
         "en": "Prof. Han attended ICML 2026 in Seoul",
