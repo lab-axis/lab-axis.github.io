@@ -65,6 +65,11 @@
       "name": "University of Pennsylvania",
       "logo": "assets/img/collaboration/university-of-pennsylvania.png",
       "url": "https://www.upenn.edu/"
+    },
+    {
+      "name": "LG",
+      "logo": "assets/img/collaboration/lg.png",
+      "url": "https://www.lg.co.kr/"
     }
   ]
 }
