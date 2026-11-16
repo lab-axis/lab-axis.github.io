@@ -3,6 +3,43 @@
 
   "publications": [
     {
+      "title": "Towards Interpretable and Context-Aware FX Forecasting: A Bayesian Graph Neural Network-Based Multi-Agent Framework",
+      "authors": "Daeseung Park, Sumin Kim, Jiwon Choi, Yongseop Han, Seunghwan Baek and Seongil Han",
+      "venue": "Journal of Intelligence and Information Systems",
+      "year": 2026,
+      "tag": "KCI"
+    },
+    {
+      "title": "Connecting Long-Horizon Cyber Foresight to Decision Support through Evidence-Bounded Multi-Agent Reasoning",
+      "authors": "Seongil Han and Paul D. Yoo",
+      "venue": "10-2026-0201430",
+      "year": 2026,
+      "tag": "Patent"
+    },
+    {
+      "title": "Context-aware forecasting of inter-firm competitive dynamics with graph learning and multi-agent reasoning",
+      "authors": "Seongil Han and Paul D. Yoo",
+      "venue": "10-2026-0201431",
+      "year": 2026,
+      "tag": "Patent"
+    },
+    {
+      "title": "Context-aware forecasting of inter-firm competitive dynamics with graph learning and multi-agent reasoning",
+      "authors": "Daeseung Park, Yonghwan Kwon, Paul D. Yoo and Seongil Han",
+      "venue": "Nature Scientific Reports",
+      "year": 2026,
+      "tag": "SCIE Q1",
+      "url": "https://www.nature.com/articles/s41598-026-79480-4"
+    },
+    {
+      "title": "Context-aware forecasting of inter-firm competitive dynamics with graph learning and multi-agent reasoning",
+      "authors": "Daeseung Park, Yonghwan Kwon, Paul D. Yoo and Seongil Han",
+      "venue": "Nature Scientific Reports",
+      "year": 2026,
+      "tag": "SCIE Q1",
+      "url": "https://www.nature.com/articles/s41598-026-79480-4"
+    },
+    {
       "title": "SMART: Structured Missingness Analysis and Reconstruction Technique for credit scoring",
       "authors": "Seongil Han, Haemin Jung, and Paul D. Yoo",
       "venue": "Nature Scientific Reports, 15(1), 15111",
