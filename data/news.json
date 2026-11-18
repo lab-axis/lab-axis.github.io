@@ -4,6 +4,21 @@
     {
       "date": "2026-11",
       "title": {
+        "en": "FX forecasting paper publication in JIIS (KCI-indexed)",
+        "ko": "환율 예측 논문, KCI 등재지 지능정보연구(JIIS) 게재 확정"
+      },
+      "body": {
+        "en": "Our paper, \"Towards Interpretable and Context-Aware FX Forecasting: A Bayesian Graph Neural Network-Based Multi-Agent Framework\", has been accepted for publication in the Journal of Intelligence and Information Systems (JIIS), a KCI-indexed journal. The study combines a Bayesian multivariate time-series graph neural network with a multi-agent system to model dependencies among exchange rates and macroeconomic indicators across the United States, Japan, and South Korea, quantify predictive uncertainty, and explain forecasts in their economic context. Congratulations to all authors.",
+        "ko": "연구실의 \"경제적 맥락을 반영한 해석 가능한 환율 예측: 베이지안 그래프 신경망 기반 멀티 에이전트 프레임워크\" 논문이 KCI 등재 학술지 지능정보연구(JIIS)에 게재 확정되었습니다. 이 연구는 베이지안 다변량 시계열 그래프 신경망과 멀티에이전트 시스템을 결합해 미국·일본·한국의 환율과 거시경제 지표 간 상호의존성을 학습하고, 환율 예측과 불확실성 추정 및 경제적 맥락에 기반한 설명을 제공하는 프레임워크를 제안합니다. 참여한 모든 연구진께 진심으로 축하드립니다."
+      },
+      "people": {
+        "en": "Daeseung Park, Soomin Kim, Jiwon Choi, Yongseob Han, Seunghwan Baek, Seongil Han",
+        "ko": "박대승, 김수민, 최지원, 한용섭, 백승환, 한성일"
+      }
+    },
+    {
+      "date": "2026-11",
+      "title": {
         "en": "Undergraduate Daeseung Park publishes first-author paper in Scientific Reports",
         "ko": "박대승 학부생, Scientific Reports에 제1저자 논문 게재"
       },
